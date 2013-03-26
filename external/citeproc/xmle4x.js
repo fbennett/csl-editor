@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009, 2010 and 2011 Frank G. Bennett, Jr. All Rights
+ * Copyright (c) 2009-2013 Frank G. Bennett, Jr. All Rights
  * Reserved.
  *
  * The contents of this file are subject to the Common Public
@@ -10,7 +10,7 @@
  * http://bitbucket.org/fbennett/citeproc-js/src/tip/LICENSE.
  *
  * The License is based on the Mozilla Public License Version 1.1 but
- * Sections 14 and 15 have been added to cover use of software over a
+ * Sections 1.13, 14 and 15 have been added to cover use of software over a
  * computer network and provide for limited attribution for the
  * Original Developer. In addition, Exhibit A has been modified to be
  * consistent with Exhibit B.
@@ -23,7 +23,7 @@
  * The Original Code is the citation formatting software known as
  * "citeproc-js" (an implementation of the Citation Style Language
  * [CSL]), including the original test fixtures and software located
- * under the ./std subdirectory of the distribution archive.
+ * under the ./tests subdirectory of the distribution archive.
  *
  * The Original Developer is not the Initial Developer and is
  * __________. If left blank, the Original Developer is the Initial
@@ -31,7 +31,7 @@
  *
  * The Initial Developer of the Original Code is Frank G. Bennett,
  * Jr. All portions of the code written by Frank G. Bennett, Jr. are
- * Copyright (c) 2009, 2010 and 2011 Frank G. Bennett, Jr. All Rights Reserved.
+ * Copyright (c) 2009-2013 Frank G. Bennett, Jr. All Rights Reserved.
  *
  * Alternatively, the contents of this file may be used under the
  * terms of the GNU Affero General Public License (the [AGPLv3]
@@ -45,6 +45,7 @@
  * recipient may use your version of this file under either the CPAL
  * or the [AGPLv3] License.”
  */
+
 var CSL_E4X = function () {};
 CSL_E4X.prototype.clean = function (xml) {
     xml = xml.replace(/<\?[^?]+\?>/g, "");
@@ -91,7 +92,13 @@ CSL_E4X.prototype.namespace = {
     "xml":"http://www.w3.org/XML/1998/namespace"
 }
 CSL_E4X.prototype.numberofnodes = function (myxml) {
-    return myxml.length();
+    if (typeof myxml === "xml") {
+        return myxml.length();
+    } else if (myxml) {
+        return myxml.length;
+    } else {
+        return 0;
+    }
 };
 CSL_E4X.prototype.getAttributeName = function (attr) {
     var ret = attr.localName();
@@ -143,11 +150,19 @@ CSL_E4X.prototype.nodeCopy = function (myxml) {
     return myxml.copy();
 }
 CSL_E4X.prototype.getNodesByName = function (myxml,name,nameattrval) {
-    var xml, ret;
+    var xml, ret, retnodes;
     default xml namespace = "http://purl.org/net/xbiblio/csl"; with({});
-    ret = myxml.descendants(name);
+    retnodes = myxml.descendants(name);
+    ret = [];
     if (nameattrval){
-        ret = ret.(@name == nameattrval);
+        retnodes = retnodes.(@name == nameattrval);
+        if (retnodes.toXMLString()) {
+            ret.push(retnodes);
+        }
+    } else {
+        for each(var retnode in retnodes) {
+            ret.push(retnode);
+        }
     }
     return ret;
 }
