@@ -69,7 +69,6 @@ define([	'src/options',
 		if (style !== previousStyle) {
 			try {
 				citeproc = new CSL.Engine(citeprocSys, style);
-				citeproc.opt.development_extensions.csl_reverse_lookup_support = true;
 				previousStyle = style;
 			}
 			catch (err) {
@@ -77,7 +76,7 @@ define([	'src/options',
 				return result;
 			}
 		} else {
-			citeproc.restoreProcessorState([]);
+			citeproc.rebuildProcessorState();
 		}
 		
 		inLineCitations = "";
