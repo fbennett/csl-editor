@@ -7,35 +7,16 @@ define(['src/urlUtils', 'src/debug'], function (CSLEDIT_urlUtils, debug) {
 
 	// This is the style to load in the Visual Editor on first run,
 	// or if the settings are reset
-	defaultStyleId = 'http://www.zotero.org/styles/apa';
+	defaultStyleId = 'http://citationstylist.org/styles/mlz-amlaw';
 
-	// A list of popular styles obtained from some Mendeley data provided
-	// by Carles Pina
+	// A short list of popular styles, which consists of everything we've got
 	var topStyles = [
-		'http://www.zotero.org/styles/apa',
-		'http://www.zotero.org/styles/ieee',
-		'http://www.zotero.org/styles/harvard1',
-		'http://www.zotero.org/styles/nature',
-		'http://www.zotero.org/styles/american-medical-association', /* manually updated from styles/ama */
-		'http://www.zotero.org/styles/chicago-author-date',
-		'http://www.zotero.org/styles/apsa',
-		'http://www.zotero.org/styles/vancouver',
-		'http://www.zotero.org/styles/asa',
-		'http://www.zotero.org/styles/mla',
-		'http://www.zotero.org/styles/mhra',
-		'http://www.zotero.org/styles/chicago-fullnote-bibliography',
-		'http://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas', /* manually updated from styles/abnt */
-		'http://www.zotero.org/styles/chicago-note-bibliography',
-		'http://www.zotero.org/styles/national-library-of-medicine', /* manually updated from styles/nlm */
-		'http://www.zotero.org/styles/american-chemical-society',
-		'http://www.zotero.org/styles/cell',
-		'http://www.zotero.org/styles/science',
-		'http://www.zotero.org/styles/elsevier-with-titles',
-		'http://www.zotero.org/styles/ecology',
-		'http://www.zotero.org/styles/elsevier-harvard',
-		'http://www.zotero.org/styles/royal-society-of-chemistry',
-		'http://www.zotero.org/styles/journal-of-the-american-chemical-society',
-		'http://www.zotero.org/styles/pnas'
+		'http://citationstylist.org/styles/mlz-amlaw',
+		'http://citationstylist.org/styles/mlz-oscola',
+		'http://citationstylist.org/styles/mlz-mcgill-guide-en-v7',
+		'http://citationstylist.org/styles/mlz-mcgill-guide-fr-v7',
+		'http://citationstylist.org/styles/mlz-new-zealand-law',
+		'http://citationstyles.org/styles/mlz-cms-full'
 	];
 
 	var getJSONData = function (path) {
