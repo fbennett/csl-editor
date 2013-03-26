@@ -76,7 +76,7 @@ define([	'src/options',
 				return result;
 			}
 		} else {
-			citeproc.rebuildProcessorState();
+			citeproc.restoreProcessorState();
 		}
 		
 		inLineCitations = "";
