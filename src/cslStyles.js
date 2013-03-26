@@ -84,7 +84,7 @@ define(['src/urlUtils', 'src/debug'], function (CSLEDIT_urlUtils, debug) {
 		}
 
 		return CSLEDIT_urlUtils.getResourceUrl(
-			styleId.replace("http://citationstylist/styles/", baseUrl) + ".csl");
+			styleId.replace("http://citationstylist/github/", baseUrl) + ".csl");
 	};
 
 	// This fetches the CSL code for the given styleId
