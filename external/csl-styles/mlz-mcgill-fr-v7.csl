@@ -2,8 +2,7 @@
   <info>
     <title>Manuel canadien de la r&#233;f&#233;rence juridique 7e &#233;d. CSL1.0 (Note et bibliographie)</title>
     <id>http://citationstylist.org/styles/mlz-mcgill-fr-v7</id>
-    <link href="http://www.zotero.org/styles/mcrj7csl10" rel="self"/>
-    <link href="" rel="documentation"/>
+    <link href="http://citationstylist.org/github/mlz-mcgill-fr-v7.csl" rel="self"/>
     <author>
       <name>Philippe Tousignant</name>
       <email>philippe.tousignant@gmail.com</email>

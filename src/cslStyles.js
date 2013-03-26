@@ -73,7 +73,7 @@ define(['src/urlUtils', 'src/debug'], function (CSLEDIT_urlUtils, debug) {
 	// Returns a style ID based on the given styleTitle that attempts
 	// to fit with the convention used in the CSL styles repository
 	var generateStyleId = function (styleTitle) {
-		return "http://www.zotero.org/styles/" + getNormalisedStyleTitle(styleTitle);
+		return "http://citationstylist.org/styles/" + getNormalisedStyleTitle(styleTitle);
 	};
 
 	// Returns the URL of the style with the given styleId on this server
@@ -84,7 +84,7 @@ define(['src/urlUtils', 'src/debug'], function (CSLEDIT_urlUtils, debug) {
 		}
 
 		return CSLEDIT_urlUtils.getResourceUrl(
-			styleId.replace("http://www.zotero.org/styles/", baseUrl) + ".csl");
+			styleId.replace("http://citationstylist/styles/", baseUrl) + ".csl");
 	};
 
 	// This fetches the CSL code for the given styleId

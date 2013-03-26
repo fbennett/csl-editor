@@ -2,7 +2,7 @@
   <info>
     <title>MLZ American Law Style</title>
     <id>http://citationstylist.org/styles/mlz-amlaw</id>
-    <link href="http://citationstylist.org/uploads/mlz-amlaw" rel="self"/>
+    <link href="http://citationstylist.org/github/mlz-amlaw.csl" rel="self"/>
     <link href="https://docs.legis.wisconsin.gov/statutes/statutes/809/II/19/1/e" rel="documentation"/>
     <author>
       <name>Frank Bennett</name>

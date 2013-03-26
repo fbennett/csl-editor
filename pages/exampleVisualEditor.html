@@ -34,11 +34,11 @@
 			require(['src/VisualEditor'], function (CSLEDIT_VisualEditor) {
 				var cslEditor = new CSLEDIT_VisualEditor('#visualEditorContainer',	
 					{
-						loadCSLName : "Load APA style",
+						loadCSLName : "Load American Law style",
 						loadCSLFunc : function () {
 							// clear all local settings
 							$.ajax({
-								url : "../external/csl-styles/apa.csl",
+								url : "../external/csl-styles/mlz-amlaw.csl",
 								dataType: "text",
 								success: function (cslCode) {
 									cslEditor.setCslCode(cslCode);
