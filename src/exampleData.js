@@ -47,7 +47,7 @@ define(function () {
 		"id": 2952,
 		"type": "webpage",
 		"key": "WETSI8AT",
-		"title": "<span class=\"small-caps\">CSL-m</span> Specification Supplement",
+		"title": "<sc>CSL-m</sc> Specification Supplement",
 		"URL": "http://gsl-nagoya-u.net/http/pub/citeproc-js-csl.html",
 		"author": [
 			{
