@@ -48,7 +48,7 @@ define(
 				"generated/csl-schema/csl-categories.rng",
 				"generated/csl-schema/csl-terms.rng",
 				"generated/csl-schema/csl-types.rng",
-				"generated/csl-schema/csl-variables.rng"
+			"generated/csl-schema/csl-variables.rng",
 				"generated/csl-schema/csl-jurisdictions.rng"
 			], function (i, path) {
 				defaultOptions.cslSchema_childURLs.push(CSLEDIT_urlUtils.getResourceUrl(path));
