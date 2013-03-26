@@ -46,7 +46,7 @@ define(function () {
 	{
 		"type": "song",
 		"title": "The Trusty Lariat",
-        "abstract: "A song",
+        "abstract": "A song",
 		"publisher": "Victor",
 		"publisher-place": "Culver City, California",
 		"event-place": "Culver City, California",
