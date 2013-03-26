@@ -143,7 +143,7 @@
 				"formattedBibliography": "Frank G. Bennett, CSL-m Specification Supplement (Sep. 29, 2011), http://gsl-nagoya-u.net/http/pub/citeproc-js-csl.html."
 			}
 		],
-		"http://citationstyles.org/styles/mlz-cms-full": [
+		"http://citationstylist.org/styles/mlz-cms-full": [
 			{
 				"statusMessage": "",
 				"formattedCitations": [

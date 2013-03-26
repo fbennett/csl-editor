@@ -1,7 +1,7 @@
 {
 	"masterIdFromId": {
 		"http://citationstylist.org/styles/mlz-amlaw": "http://citationstylist.org/styles/mlz-amlaw",
-		"http://citationstyles.org/styles/mlz-cms-full": "http://citationstyles.org/styles/mlz-cms-full",
+		"http://citationstylist.org/styles/mlz-cms-full": "http://citationstylist.org/styles/mlz-cms-full",
 		"http://citationstylist.org/styles/mlz-mcgill-en-v7": "http://citationstylist.org/styles/mlz-mcgill-en-v7",
 		"http://citationstylist.org/styles/mlz-mcgill-fr-v7": "http://citationstylist.org/styles/mlz-mcgill-fr-v7",
 		"http://citationstylist.org/styles/mlz-new-zealand-law": "http://citationstylist.org/styles/mlz-new-zealand-law",
@@ -9,7 +9,7 @@
 	},
 	"styleTitleFromId": {
 		"http://citationstylist.org/styles/mlz-amlaw": "MLZ American Law Style",
-		"http://citationstyles.org/styles/mlz-cms-full": "MLZ Chicago Manual of Style (Full Note)",
+		"http://citationstylist.org/styles/mlz-cms-full": "MLZ Chicago Manual of Style (Full Note)",
 		"http://citationstylist.org/styles/mlz-mcgill-en-v7": "MLZ Canadian Guide to Uniform Legal Citation, 7th ed. (McGill Guide)",
 		"http://citationstylist.org/styles/mlz-mcgill-fr-v7": "Manuel canadien de la référence juridique 7e éd. CSL1.0 (Note et bibliographie)",
 		"http://citationstylist.org/styles/mlz-new-zealand-law": "New Zealand Law Style Guide (MLZ)",
