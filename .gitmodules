@@ -1,9 +1,6 @@
 [submodule "external/codemirror2"]
 	path = external/codemirror2
 	url = http://marijnhaverbeke.nl/git/codemirror
-[submodule "external/csl-styles"]
-	path = external/csl-styles
-	url = https://github.com/citation-style-language/styles.git
 [submodule "external/jstree"]
 	path = external/jstree
 	url = https://github.com/citation-style-editor/jstree.git
